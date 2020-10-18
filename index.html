@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./abcjs-basic-min.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        var abc = "X: 4\n" +
+            "K: C\n" +
+            "L: 1/16\n" +
+            "V:V1 clef=treble\n" +
+            "V:V2 clef=bass\n" +
+            "[V:V1] [CGBDG'B']\n" +
+            "[V:V2] [F,CG,,]" +
+            "[V:V1] [DF][GG]\n" +
+            "[V:V2] C" +
+            "[V:V1] [DF][GG]\n" +
+            "[V:V2] C";
+
+        function load() {
+            ABCJS.renderAbc("paper", abc);
+        }
+    </script>
+</head>
+
+<body onload="load()">
+    <h1>pinao</h1>
+    <div id="paper"></div>
+</body>
+
+</html>
