@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+/*https://color.adobe.com/search?q=piano*/
+
+/* Color Theme Swatches in RGBA */
+$CERAMICA-GLOBO-1-rgba: rgba(165,124,101, 1)
+$CERAMICA-GLOBO-2-rgba: rgba(63,38,28, 1)
+$CERAMICA-GLOBO-3-rgba: rgba(114,75,60, 1)
+$CERAMICA-GLOBO-4-rgba: rgba(191,80,80, 1)
+$CERAMICA-GLOBO-5-rgba: rgba(216,216,216, 1)
+
+$header-text-color: $CERAMICA-GLOBO-5-rgba
+
+svg
+  fill: #40261D
+  stroke: #40261D
+
+nav
+  background-color: $CERAMICA-GLOBO-3-rgba
+  box-shadow: 0px -1px 10px black
+  margin: 0
+  padding: 20px
+  color: $CERAMICA-GLOBO-5-rgba
+
+  #nav_container
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+
+  h1
+    color: $header-text-color
+    font-size: 4em
+    margin: 0
+
+  a.nav_link
+    margin: 10px
+    decoration: none
+    color: $header-text-color
+
+
+
+body
+  padding: 0
+  margin: 0
+  background-color: $CERAMICA-GLOBO-1-rgba
+  font-family: 'Spectral', serif
+
+
+.container
+  flex-direction: row
+  display: flex
+  .side
+    flex: 1
+  .content
+    flex: 1
+    h1
+      font-size: 2em

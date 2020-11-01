@@ -1,0 +1,21 @@
+<h1>Learning</h1>
+<div id="paper"></div>
+<div>
+    <p>Remaining: {{countLeft}}</p>
+    <p>speed: {{speed}} seconds</p>
+
+    <div class="button-row">
+        <div class="button-collection">
+            <button (click)="startUpperService()">Practice treble bar</button>
+            <button (click)="startLowerService()">Practice bass bar</button>
+        </div>
+        <div class="button-collection">
+
+            <button (click)="startWithSeconds(1)">fail in 1.0 seconds!!!</button>
+            <button (click)="startWithSeconds(1.5)">fail in 1.5 seconds!</button>
+            <button (click)="startWithSeconds(2)">fail in 2.0 seconds</button>
+            <button (click)="startWithSeconds(3)">fail in 3.0 seconds</button>
+            <button (click)="startWithSeconds(30)">fail in 30 seconds</button>
+        </div>
+    </div>
+</div>
